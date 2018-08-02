@@ -15,7 +15,6 @@ class Product extends Component {
       loading: false,
       product: data
     })
-    console.log(this.state.pro)
   }
 
   render() {
