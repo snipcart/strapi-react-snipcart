@@ -1,0 +1,21 @@
+.product {
+  @include drop-shadow($dark-grey, 0.95);
+  background: white;
+  border-radius: 4px;
+  display: flex;
+  padding: 20px;
+}
+
+.product__information {
+  text-align: center;
+  width: 250px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.product__description {
+  padding: 20px;
+  flex: 1;
+}

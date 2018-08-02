@@ -1,0 +1,18 @@
+.BuyButton {
+    background: red;
+    white-space: nowrap;
+    font-weight: 500;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 0.5rem 2rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    @include drop-shadow(darken(red, 20), 0.7);
+
+    transition: transform 0.5s;
+    &:hover {
+        transform: translateY(-3px);
+    }
+}

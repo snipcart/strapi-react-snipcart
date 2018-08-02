@@ -1,0 +1,93 @@
+// Imports
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700');
+
+@import './helpers/colors.scss';
+@import './helpers/mixins.scss';
+
+@import './components/BuyButton';
+@import './components/ProductList';
+@import './components/Product';
+
+// Global styling
+* {
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+// App styling
+.App {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $background;
+}
+  
+.App-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    font-size: 20px;
+    color: $dark-grey;
+    @include drop-shadow($dark-grey, 0.95);
+
+    a {
+        color: inherit;
+        text-decoration: none; 
+    }
+
+    .right {
+        margin-left: auto;
+    }
+}
+    
+.App-content {
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+
+    flex: 1;
+}
+
+.App-footer {
+    width: 100%;
+
+    background-color: $dark-grey;
+    padding: 20px;
+    color: white;
+    display: flex;
+
+    a { 
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1px solid transparentize(white, 0.5); 
+    }
+
+    .right {
+        margin-left: auto;
+        a {margin-left: 12px;}
+    }
+}
+
+.snipcart-checkout {
+    background-color: transparent;
+    border: 1px solid $dark-grey;
+    padding: 0.5rem;
+    border-radius: 4px;
+    color: $dark-grey;
+
+    transition: background-color 0.5s, color 0.5s;
+    &:hover {
+        background-color: $dark-grey;
+        color: white;
+    }
+}
