@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
-import Product from './Product';
 import BuyButton from './BuyButton';
 
 class ProductList extends Component {
@@ -34,8 +33,7 @@ class ProductList extends Component {
                 <div className="ProductList-product" key={product.id}>
                   <Link to={`/product/${product.id}`}>
                     <h3>{product.name}</h3>
-                    <img src={product.image ? `https://snipcart-strapi.herokuapp.com${product.image.url}` : ""}
-                      alt={product.name} />
+                    <img src={`https://snipcart-strapi.herokuapp.com${product.image.url}`} alt={product.name} />
                   </Link>
                   <BuyButton product={product} />
                 </div>

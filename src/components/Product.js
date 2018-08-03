@@ -23,7 +23,7 @@ class Product extends Component {
         <div className="product">
           <div className="product__information">
             <h2 className="Product-title">{this.state.product.name}</h2>
-            <img src={this.state.product.image ? `https://snipcart-strapi.herokuapp.com/${this.state.product.image.url}` : ""} alt={this.state.product.name} />
+            <img src={`https://snipcart-strapi.herokuapp.com/${this.state.product.image.url}`} />
             <BuyButton {...this.state} />
           </div>
           <div className="product__description">
