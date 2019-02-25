@@ -16,3 +16,5 @@ In the process, I reflected a lot about this kind of Universal JavaScript stack 
 > Read the full tutorial [here](https://snipcart.com/blog/node-js-react-strapi-tutorial)
 
 > Find the live demo [here](https://snipcart-strapi-react.netlify.com/)
+
+Enjoy folks!
